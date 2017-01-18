@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #FFF;
+	text-align: center;
+}
+
+.section{
+	background-color: #16a085;
+	height: 500px;
+	line-height: 500px;
+
+}
+
+.loader{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.loader-quart{
+	border-radius:50px;
+	border: 6px solid rgba(255,255,255,0.4);
+}
+
+ .loader-quart:after{
+	content: '';
+	position: absolute;
+	top: 224px; 
+	left: 37.15%;
+	bottom: 10px;
+	right: 0px;
+	height: 50px;
+	width: 50px;
+	border: 6px solid transparent;
+	border-top-color: #FFF;
+	animation: spin 2.7s linear 0s infinite;
+	border-radius: 400px;
+
+} 
+
+@-webkit-keyframes spin{
+	0% { transform: rotate(0deg); }
+	100% {transform: rotate(360deg);}
+
+}
+
+@keyframes spin{
+	0% { transform: rotate(0deg); }
+	100% {transform: rotate(360deg);}
+}
+
+
+ /*1286 par 500 sur l'ordit dell */
+ /* faire un loader responsive  */
